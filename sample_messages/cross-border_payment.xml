@@ -11,13 +11,13 @@
       <PmtId>
         <EndToEndId>E2E-XBORDER-001</EndToEndId>
       </PmtId>
-      <IntrBkSttlmAmt Ccy="USD"/>
       <Dbtr>
         <CtryOfRes>CA</CtryOfRes>
       </Dbtr>
       <Cdtr>
         <CtryOfRes>US</CtryOfRes>
       </Cdtr>
+      <IntrBkSttlmAmt Ccy="USD">7500.00</IntrBkSttlmAmt>
     </CdtTrfTxInf>
   </FIToFICstmrCdtTrf>
 </Document>

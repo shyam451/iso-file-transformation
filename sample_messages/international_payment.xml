@@ -11,14 +11,14 @@
       <PmtId>
         <EndToEndId>E2E-INTL-001</EndToEndId>
       </PmtId>
-      <IntrBkSttlmAmt Ccy="EUR"/>
-      <InstdAmt Ccy="USD"/>
       <Dbtr>
         <CtryOfRes>CA</CtryOfRes>
       </Dbtr>
       <Cdtr>
         <CtryOfRes>FR</CtryOfRes>
       </Cdtr>
+      <IntrBkSttlmAmt Ccy="EUR">10000.00</IntrBkSttlmAmt>
+      <InstdAmt Ccy="USD">12000.00</InstdAmt>
     </CdtTrfTxInf>
   </FIToFICstmrCdtTrf>
 </Document>

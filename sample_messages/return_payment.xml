@@ -22,6 +22,7 @@
         </Rsn>
         <AddtlInf>Payment returned as requested</AddtlInf>
       </RtrInf>
+      <IntrBkSttlmAmt Ccy="CAD">3500.00</IntrBkSttlmAmt>
     </CdtTrfTxInf>
   </FIToFICstmrCdtTrf>
 </Document>

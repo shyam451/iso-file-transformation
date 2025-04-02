@@ -11,13 +11,13 @@
       <PmtId>
         <EndToEndId>E2E-DOM-001</EndToEndId>
       </PmtId>
-      <IntrBkSttlmAmt Ccy="CAD"/>
       <Dbtr>
         <CtryOfRes>CA</CtryOfRes>
       </Dbtr>
       <Cdtr>
         <CtryOfRes>CA</CtryOfRes>
       </Cdtr>
+      <IntrBkSttlmAmt Ccy="CAD">5000.00</IntrBkSttlmAmt>
     </CdtTrfTxInf>
   </FIToFICstmrCdtTrf>
 </Document>

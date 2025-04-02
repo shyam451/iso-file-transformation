@@ -12,6 +12,7 @@
         <EndToEndId>E2E-URGENT-001</EndToEndId>
       </PmtId>
       <SttlmPrty>HIGH</SttlmPrty>
+      <IntrBkSttlmAmt Ccy="CAD">25000.00</IntrBkSttlmAmt>
     </CdtTrfTxInf>
   </FIToFICstmrCdtTrf>
 </Document>

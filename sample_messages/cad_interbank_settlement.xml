@@ -11,8 +11,8 @@
       <PmtId>
         <EndToEndId>E2E-CAD-INTRBNK-001</EndToEndId>
       </PmtId>
-      <IntrBkSttlmAmt Ccy="CAD"/>
-      <InstdAmt Ccy="CAD"/>
+      <IntrBkSttlmAmt Ccy="CAD">15000.00</IntrBkSttlmAmt>
+      <InstdAmt Ccy="CAD">15000.00</InstdAmt>
     </CdtTrfTxInf>
   </FIToFICstmrCdtTrf>
 </Document>
