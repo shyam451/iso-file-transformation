@@ -30,6 +30,9 @@ The following payment scenarios are supported:
 2. **Cross-Border Payment**: A payment between two financial institutions in different countries
 3. **High-Value Payment**: A high-value payment between financial institutions
 4. **Urgent Payment**: An urgent payment with high priority
+5. **CAD Interbank Settlement**: Payment with CAD as the interbank settlement currency
+6. **Return Payment**: A payment that is being returned to the original sender
+7. **International Payment**: An international payment with currency conversion
 
 ## Usage
 
