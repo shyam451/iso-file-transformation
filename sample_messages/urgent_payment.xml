@@ -1,53 +1,21 @@
 <?xml version="1.0" ?>
-<ns0:Document xmlns:ns0="urn:iso:std:iso:20022:tech:xsd:pacs.008.001.08">
-  
-  
-  <ns0:FIToFICstmrCdtTrf>
-    
-    
-    <ns0:GrpHdr>
-      
-      
-      <ns0:MsgId>MSG-Urgent-Payment-001</ns0:MsgId>
-      
-      
-      <ns0:CreDtTm>2025-04-02T15:10:00Z</ns0:CreDtTm>
-      
-      
-      <ns0:NbOfTxs>1</ns0:NbOfTxs>
-      
-      
-      <ns0:SttlmInf>
+<Document>
+  <FIToFICstmrCdtTrf>
+    <GrpHdr>
+      <MsgId>MSG-Urgent-Payment-001</MsgId>
+      <CreDtTm>2025-04-02T15:10:00Z</CreDtTm>
+      <NbOfTxs>1</NbOfTxs>
+      <SttlmInf>
         CLRG
         <SttlmMtd>CLRG</SttlmMtd>
-      </ns0:SttlmInf>
-      
-    
-    </ns0:GrpHdr>
-    
-    
-    <ns0:CdtTrfTxInf>
-      
-      
-      <ns0:PmtId>
-        
-        
-        <ns0:EndToEndId>E2E-URGENT-001</ns0:EndToEndId>
-        
-      
-      </ns0:PmtId>
-      
-      
-      <ns0:SttlmPrty>HIGH</ns0:SttlmPrty>
-      
-      
-      <ns0:IntrBkSttlmAmt Ccy="CAD">25000.00</ns0:IntrBkSttlmAmt>
-      
-    
-    </ns0:CdtTrfTxInf>
-    
-  
-  </ns0:FIToFICstmrCdtTrf>
-  
-
-</ns0:Document>
+      </SttlmInf>
+    </GrpHdr>
+    <CdtTrfTxInf>
+      <PmtId>
+        <EndToEndId>E2E-URGENT-001</EndToEndId>
+      </PmtId>
+      <SttlmPrty>HIGH</SttlmPrty>
+      <IntrBkSttlmAmt Ccy="CAD">25000.00</IntrBkSttlmAmt>
+    </CdtTrfTxInf>
+  </FIToFICstmrCdtTrf>
+</Document>
