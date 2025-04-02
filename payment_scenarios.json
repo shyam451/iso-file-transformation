@@ -18,5 +18,20 @@
     "name": "Urgent Payment",
     "description": "An urgent payment with high priority",
     "file_name": "urgent_payment.xml"
+  },
+  {
+    "name": "CAD Interbank Settlement",
+    "description": "Payment with CAD as the interbank settlement currency",
+    "file_name": "cad_interbank_settlement.xml"
+  },
+  {
+    "name": "Return Payment",
+    "description": "A payment that is being returned to the original sender",
+    "file_name": "return_payment.xml"
+  },
+  {
+    "name": "International Payment",
+    "description": "An international payment with currency conversion",
+    "file_name": "international_payment.xml"
   }
 ]

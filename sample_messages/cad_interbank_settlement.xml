@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+<Document xmlns="urn:iso:std:iso:20022:tech:xsd:pacs.008.001.08">
+  <FIToFICstmrCdtTrf>
+    <GrpHdr>
+      <MsgId>MSG-CAD-Interbank-Settlement-001</MsgId>
+      <CreDtTm>2025-04-02T15:10:00Z</CreDtTm>
+      <NbOfTxs>1</NbOfTxs>
+      <SttlmInf>CLRG</SttlmInf>
+    </GrpHdr>
+    <CdtTrfTxInf>
+      <PmtId>
+        <EndToEndId>E2E-CAD-INTRBNK-001</EndToEndId>
+      </PmtId>
+      <IntrBkSttlmAmt Ccy="CAD"/>
+      <InstdAmt Ccy="CAD"/>
+    </CdtTrfTxInf>
+  </FIToFICstmrCdtTrf>
+</Document>
