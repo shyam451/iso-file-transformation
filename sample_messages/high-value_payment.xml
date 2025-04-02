@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<Document xmlns="urn:iso:std:iso:20022:tech:xsd:pacs.008.001.08">
+  <FIToFICstmrCdtTrf>
+    <GrpHdr>
+      <MsgId>MSG-High-Value-Payment-001</MsgId>
+      <CreDtTm>2025-04-02T15:10:00Z</CreDtTm>
+      <NbOfTxs>1</NbOfTxs>
+      <SttlmInf>CLRG</SttlmInf>
+    </GrpHdr>
+    <CdtTrfTxInf>
+      <PmtId>
+        <EndToEndId>E2E-HIGHVAL-001</EndToEndId>
+      </PmtId>
+      <IntrBkSttlmAmt Ccy="CAD">1000000.00</IntrBkSttlmAmt>
+    </CdtTrfTxInf>
+  </FIToFICstmrCdtTrf>
+</Document>

@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Domestic Payment",
+    "description": "A payment between two financial institutions within the same country",
+    "file_name": "domestic_payment.xml"
+  },
+  {
+    "name": "Cross-Border Payment",
+    "description": "A payment between two financial institutions in different countries",
+    "file_name": "cross-border_payment.xml"
+  },
+  {
+    "name": "High-Value Payment",
+    "description": "A high-value payment between financial institutions",
+    "file_name": "high-value_payment.xml"
+  },
+  {
+    "name": "Urgent Payment",
+    "description": "An urgent payment with high priority",
+    "file_name": "urgent_payment.xml"
+  }
+]
