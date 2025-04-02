@@ -1,23 +1,68 @@
 <?xml version="1.0" ?>
-<Document xmlns="urn:iso:std:iso:20022:tech:xsd:pacs.008.001.08">
-  <FIToFICstmrCdtTrf>
-    <GrpHdr>
-      <MsgId>MSG-Domestic-Payment-001</MsgId>
-      <CreDtTm>2025-04-02T15:10:00Z</CreDtTm>
-      <NbOfTxs>1</NbOfTxs>
-      <SttlmInf>CLRG</SttlmInf>
-    </GrpHdr>
-    <CdtTrfTxInf>
-      <PmtId>
-        <EndToEndId>E2E-DOM-001</EndToEndId>
-      </PmtId>
-      <Dbtr>
-        <CtryOfRes>CA</CtryOfRes>
-      </Dbtr>
-      <Cdtr>
-        <CtryOfRes>CA</CtryOfRes>
-      </Cdtr>
-      <IntrBkSttlmAmt Ccy="CAD">5000.00</IntrBkSttlmAmt>
-    </CdtTrfTxInf>
-  </FIToFICstmrCdtTrf>
-</Document>
+<ns0:Document xmlns:ns0="urn:iso:std:iso:20022:tech:xsd:pacs.008.001.08">
+  
+  
+  <ns0:FIToFICstmrCdtTrf>
+    
+    
+    <ns0:GrpHdr>
+      
+      
+      <ns0:MsgId>MSG-Domestic-Payment-001</ns0:MsgId>
+      
+      
+      <ns0:CreDtTm>2025-04-02T15:10:00Z</ns0:CreDtTm>
+      
+      
+      <ns0:NbOfTxs>1</ns0:NbOfTxs>
+      
+      
+      <ns0:SttlmInf>
+        CLRG
+        <SttlmMtd>CLRG</SttlmMtd>
+      </ns0:SttlmInf>
+      
+    
+    </ns0:GrpHdr>
+    
+    
+    <ns0:CdtTrfTxInf>
+      
+      
+      <ns0:PmtId>
+        
+        
+        <ns0:EndToEndId>E2E-DOM-001</ns0:EndToEndId>
+        
+      
+      </ns0:PmtId>
+      
+      
+      <ns0:Dbtr>
+        
+        
+        <ns0:CtryOfRes>CA</ns0:CtryOfRes>
+        
+      
+      </ns0:Dbtr>
+      
+      
+      <ns0:Cdtr>
+        
+        
+        <ns0:CtryOfRes>CA</ns0:CtryOfRes>
+        
+      
+      </ns0:Cdtr>
+      
+      
+      <ns0:IntrBkSttlmAmt Ccy="CAD">5000.00</ns0:IntrBkSttlmAmt>
+      
+    
+    </ns0:CdtTrfTxInf>
+    
+  
+  </ns0:FIToFICstmrCdtTrf>
+  
+
+</ns0:Document>

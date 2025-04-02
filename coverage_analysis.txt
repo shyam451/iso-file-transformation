@@ -1,0 +1,16 @@
+=== COVERAGE ANALYSIS ===
+Total mandatory fields: 8
+Covered mandatory fields: 8
+Overall coverage: 100.0%
+
+=== COVERAGE BY FILE ===
+cross-border_payment.xml: 100.0% (8 of 8 mandatory fields)
+international_payment.xml: 100.0% (8 of 8 mandatory fields)
+cad_interbank_settlement.xml: 100.0% (8 of 8 mandatory fields)
+urgent_payment.xml: 100.0% (8 of 8 mandatory fields)
+return_payment.xml: 100.0% (8 of 8 mandatory fields)
+domestic_payment.xml: 100.0% (8 of 8 mandatory fields)
+high-value_payment.xml: 100.0% (8 of 8 mandatory fields)
+
+=== MISSING MANDATORY FIELDS ===
+No missing mandatory fields!
