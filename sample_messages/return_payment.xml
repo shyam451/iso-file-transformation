@@ -45,7 +45,17 @@ This XML file complies with the following ISO 20022 rules:
       </ns0:SttlmInf>
       
     
-    </ns0:GrpHdr>
+    
+      <ns0:InstgAgt>
+        <ns0:FinInstnId>
+          <ns0:BICFI>ABCDUS22XXX</ns0:BICFI>
+        </ns0:FinInstnId>
+      </ns0:InstgAgt>
+      <ns0:InstdAgt>
+        <ns0:FinInstnId>
+          <ns0:BICFI>EFGHCA33XXX</ns0:BICFI>
+        </ns0:FinInstnId>
+      </ns0:InstdAgt></ns0:GrpHdr>
     
     
     <ns0:CdtTrfTxInf>
@@ -69,22 +79,16 @@ This XML file complies with the following ISO 20022 rules:
       <ns0:PmtTpInf>
         
         
-        <ns0:SvcLvl>
-          
-          
-          <ns0:Cd>NURG</ns0:Cd>
-          
         
-        </ns0:SvcLvl>
+      <ns0:SvcLvl>
+        <ns0:Cd>NURG</ns0:Cd>
+      </ns0:SvcLvl>
         
         
-        <ns0:LclInstrm>
-          
-          
-          <ns0:Cd>RTN</ns0:Cd>
-          
         
-        </ns0:LclInstrm>
+      <ns0:LclInstrm>
+        <ns0:Cd>RTGS</ns0:Cd>
+      </ns0:LclInstrm>
         
       
       </ns0:PmtTpInf>
@@ -222,25 +226,27 @@ This XML file complies with the following ISO 20022 rules:
       </ns0:CdtrAcct>
       
       
-      <ns0:RtrRsnInf>
-        
-        
-        <ns0:Rsn>
-          
-          
-          <ns0:Cd>AC01</ns0:Cd>
-          
-        
-        </ns0:Rsn>
-        
-        
-        <ns0:AddtlInf>Incorrect account number</ns0:AddtlInf>
-        
-      
-      </ns0:RtrRsnInf>
       
       
-      <ns0:RmtInf>
+      
+      
+      
+      <ns0:InstrForCdtrAgt>
+        <ns0:Cd>PHOB</ns0:Cd>
+        <ns0:InstrInf>Please contact beneficiary by phone before credit</ns0:InstrInf>
+      </ns0:InstrForCdtrAgt>
+      
+      <ns0:Purp>
+        <ns0:Cd>CASH</ns0:Cd>
+      </ns0:Purp>
+      
+      <ns0:RgltryRptg>
+        <ns0:DbtCdtRptgInd>CRED</ns0:DbtCdtRptgInd>
+        <ns0:Authrty>
+          <ns0:Nm>Regulatory Authority</ns0:Nm>
+          <ns0:Ctry>CA</ns0:Ctry>
+        </ns0:Authrty>
+      </ns0:RgltryRptg><ns0:RmtInf>
         
         
         <ns0:Ustrd>Return of payment</ns0:Ustrd>
