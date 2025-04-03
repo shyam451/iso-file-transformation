@@ -14,13 +14,21 @@ This repository contains tools for analyzing ISO 20022 message structures and ge
    - `cross-border_payment.xml`: Cross-border payment scenario
    - `high-value_payment.xml`: High-value payment scenario
    - `urgent_payment.xml`: Urgent payment scenario
+   - `cad_interbank_settlement.xml`: CAD Interbank Settlement scenario
+   - `return_payment.xml`: Return Payment scenario
+   - `international_payment.xml`: International Payment scenario
 
 - `scripts/`: Utility scripts
    - `analyze_iso_file.py`: Analyze ISO 20022 Excel files
    - `extract_message_structure.py`: Extract message structure and generate sample files
    - `generate_custom_message.py`: Generate custom messages for specific scenarios
+   - `validate_rules.py`: Validate XML messages against rules from the Excel file
+   - `create_clean_xml.py`: Generate clean, well-formed XML files for all scenarios
 
-- `payment_scenarios.json`: JSON file containing information about supported payment scenarios
+- `data/`: Reference data files
+   - `rtr_fi_to_fi_customer_credit_transfer_pacs.008excel.xlsx`: Reference Excel file for pacs.008 message structure
+
+- `validation_report.md`: Report of validation results for all sample messages
 
 ## Payment Scenarios
 
