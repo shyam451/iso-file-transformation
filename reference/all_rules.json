@@ -1,0 +1,82 @@
+[
+  {
+    "index": "R2",
+    "name": "Rule \"Textual_RTR_InstructingAgent/InstructedAgent_DebtorAgent/CreditorAgent_Rule\"",
+    "definition": "Instructing Agent must be the same as Debtor Agent, and Instructed Agent must be the same as Creditor Agent."
+  },
+  {
+    "index": "R3",
+    "name": "Rule \"RTR_Name_MandatoryIf_PstlAdrPresent_Rule\"",
+    "definition": "If Postal Address is present, Name is mandatory."
+  },
+  {
+    "index": "R4",
+    "name": "Rule \"RTR_Name_MandatoryIf_PstlAdrPresent_Rule\"",
+    "definition": "If Postal Address is present, Name is mandatory."
+  },
+  {
+    "index": "R5",
+    "name": "Rule \"RTR_DebtorName_MandatoryIf_Rule\"",
+    "definition": "For Debtor, if AnyBIC is absent, Name is mandatory."
+  },
+  {
+    "index": "R6",
+    "name": "Rule \"RTR_Name_MandatoryIf_PstlAdrPresent_Rule\"",
+    "definition": "If Postal Address is present, Name is mandatory."
+  },
+  {
+    "index": "R7",
+    "name": "Rule \"StructuredVsUnstructuredRule\"",
+    "definition": "If PostalAddress is used and if AddressLine is present, then all other optional elements in PostalAddress must be absent."
+  },
+  {
+    "index": "R8",
+    "name": "Rule \"TownNameAndCountryRule\"",
+    "definition": "If \u201cPostalAddress\u201d is used, and if AddressLine is absent, then Town Name and Country must be present."
+  },
+  {
+    "index": "R9",
+    "name": "Rule \"RTR_CreditorName_MandatoryIf_Rule\"",
+    "definition": "For Creditor, if AnyBIC is absent, Name is mandatory."
+  },
+  {
+    "index": "R10",
+    "name": "Rule \"RTR_Name_MandatoryIf_PstlAdrPresent_Rule\"",
+    "definition": "If Postal Address is present, Name is mandatory."
+  },
+  {
+    "index": "R11",
+    "name": "Rule \"StructuredVsUnstructuredRule\"",
+    "definition": "If PostalAddress is used and if AddressLine is present, then all other optional elements in PostalAddress must be absent."
+  },
+  {
+    "index": "R12",
+    "name": "Rule \"TownNameAndCountryRule\"",
+    "definition": "If \u201cPostalAddress\u201d is used, and if AddressLine is absent, then Town Name and Country must be present."
+  },
+  {
+    "index": "R13",
+    "name": "Rule \"RTR_Name_MandatoryIf_PstlAdrPresent_Rule\"",
+    "definition": "If Postal Address is present, Name is mandatory."
+  },
+  {
+    "index": "R14",
+    "name": "Rule \"Textual_RTR_RelatedRemittanceRule\"",
+    "definition": "The Related Remittance component must not exceed 9,000 characters of business data (excluding tags).   This rule will be effective on YYYY-MM-DD (date to be confirmed)."
+  },
+  {
+    "index": "R15",
+    "name": "Rule \"Textual_RTR_RelatedRemitInfo_RemitInfo_MutuallyExclusiveRule\"",
+    "definition": "Related Remittance Information and Remittance Information are mutually exclusive and all may be absent. This rule will be effective on YYYY-MM-DD (date to be confirmed)."
+  },
+  {
+    "index": "R16",
+    "name": "Rule \"Textual_RTR_Unstructured_Structured_MutuallyExclusiveRule\"",
+    "definition": "For Remittance Information, Unstructured and Structured are mutually exclusive and all may be absent.  This rule will be effective on YYYY-MM-DD (date to be confirmed)."
+  },
+  {
+    "index": "R17",
+    "name": "Rule \"Textual_RTR_RemittanceRule\"",
+    "definition": "Structured Remittance can be repeated, however the total business data for all occurrences (excluding tags) must not exceed 9,000 characters. This rule will be implemented on YYYY-MM-DD (date to be confirmed)."
+  }
+]
