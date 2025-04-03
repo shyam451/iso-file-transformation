@@ -1,252 +1,114 @@
-<?xml version="1.0" ?>
-<!--
-This XML file complies with the following ISO 20022 rules:
-- Rule R2: Rule "Textual_RTR_InstructingAgent/InstructedAgent_DebtorAgent/CreditorAgent_Rule" - Instructing Agent must be the same as Debtor Agent, and Instructed Agent must be the same as Creditor Agent.
-- Rule R3: Rule "RTR_Name_MandatoryIf_PstlAdrPresent_Rule" - If Postal Address is present, Name is mandatory.
-- Rule R4: Rule "RTR_Name_MandatoryIf_PstlAdrPresent_Rule" - If Postal Address is present, Name is mandatory.
-- Rule R5: Rule "RTR_DebtorName_MandatoryIf_Rule" - For Debtor, if AnyBIC is absent, Name is mandatory.
-- Rule R6: Rule "RTR_Name_MandatoryIf_PstlAdrPresent_Rule" - If Postal Address is present, Name is mandatory.
-- Rule R7: Rule "StructuredVsUnstructuredRule" - If PostalAddress is used and if AddressLine is present, then all other optional elements in PostalAddress must be absent.
-- Rule R8: Rule "TownNameAndCountryRule" - If “PostalAddress” is used, and if AddressLine is absent, then Town Name and Country must be present.
-- Rule R9: Rule "RTR_CreditorName_MandatoryIf_Rule" - For Creditor, if AnyBIC is absent, Name is mandatory.
-- Rule R10: Rule "RTR_Name_MandatoryIf_PstlAdrPresent_Rule" - If Postal Address is present, Name is mandatory.
-- Rule R11: Rule "StructuredVsUnstructuredRule" - If PostalAddress is used and if AddressLine is present, then all other optional elements in PostalAddress must be absent.
-- Rule R12: Rule "TownNameAndCountryRule" - If “PostalAddress” is used, and if AddressLine is absent, then Town Name and Country must be present.
-- Rule R13: Rule "RTR_Name_MandatoryIf_PstlAdrPresent_Rule" - If Postal Address is present, Name is mandatory.
-- Rule R14: Rule "Textual_RTR_RelatedRemittanceRule" - The Related Remittance component must not exceed 9,000 characters of business data (excluding tags).   This rule will be effective on YYYY-MM-DD (date to be confirmed).
-- Rule R15: Rule "Textual_RTR_RelatedRemitInfo_RemitInfo_MutuallyExclusiveRule" - Related Remittance Information and Remittance Information are mutually exclusive and all may be absent. This rule will be effective on YYYY-MM-DD (date to be confirmed).
-- Rule R16: Rule "Textual_RTR_Unstructured_Structured_MutuallyExclusiveRule" - For Remittance Information, Unstructured and Structured are mutually exclusive and all may be absent.  This rule will be effective on YYYY-MM-DD (date to be confirmed).
-- Rule R17: Rule "Textual_RTR_RemittanceRule" - Structured Remittance can be repeated, however the total business data for all occurrences (excluding tags) must not exceed 9,000 characters. This rule will be implemented on YYYY-MM-DD (date to be confirmed).
--->
-<ns0:Document xmlns:ns0="urn:iso:std:iso:20022:tech:xsd:pacs.008.001.08">
-  
-  
-  <ns0:FIToFICstmrCdtTrf>
-    
-    
-    <ns0:GrpHdr>
-      
-      
-      <ns0:MsgId>MSG-DOMESTIC-PAYMENT-001</ns0:MsgId>
-      
-      
-      <ns0:CreDtTm>2025-04-03T12:00:00Z</ns0:CreDtTm>
-      
-      
-      <ns0:NbOfTxs>1</ns0:NbOfTxs>
-      
-      
-      <ns0:SttlmInf>
-        
-        
-        <ns0:SttlmMtd>CLRG</ns0:SttlmMtd>
-        
-      
-      </ns0:SttlmInf>
-      
-    
-    
-      <ns0:InstgAgt>
-        <ns0:FinInstnId>
-          <ns0:BICFI>ABCDUS22XXX</ns0:BICFI>
-        </ns0:FinInstnId>
-      </ns0:InstgAgt>
-      <ns0:InstdAgt>
-        <ns0:FinInstnId>
-          <ns0:BICFI>EFGHCA33XXX</ns0:BICFI>
-        </ns0:FinInstnId>
-      </ns0:InstdAgt></ns0:GrpHdr>
-    
-    
-    <ns0:CdtTrfTxInf>
-      
-      
-      <ns0:PmtId>
-        
-        
-        <ns0:EndToEndId>E2E-DOM-001</ns0:EndToEndId>
-        
-        
-        <ns0:TxId>TX-DOM-001</ns0:TxId>
-        
-      
-      </ns0:PmtId>
-      
-      
-      <ns0:PmtTpInf>
-        
-        
-        
-      <ns0:SvcLvl>
-        <ns0:Cd>NURG</ns0:Cd>
-      </ns0:SvcLvl>
-        
-      
-      </ns0:PmtTpInf>
-      
-      
-      <ns0:IntrBkSttlmAmt Ccy="CAD">1000.00</ns0:IntrBkSttlmAmt>
-      
-      
-      <ns0:ChrgBr>SHAR</ns0:ChrgBr>
-      
-      
-      <ns0:Dbtr>
-        
-        
-        <ns0:Nm>John Smith</ns0:Nm>
-        
-        
-        <ns0:PstlAdr>
-          
-          
-          <ns0:StrtNm>123 Maple Street</ns0:StrtNm>
-          
-          
-          <ns0:TwnNm>Toronto</ns0:TwnNm>
-          
-          
-          <ns0:Ctry>CA</ns0:Ctry>
-          
-        
-        </ns0:PstlAdr>
-        
-        
-        <ns0:CtryOfRes>CA</ns0:CtryOfRes>
-        
-      
-      </ns0:Dbtr>
-      
-      
-      <ns0:DbtrAcct>
-        
-        
-        <ns0:Id>
-          
-          
-          <ns0:Othr>
-            
-            
-            <ns0:Id>12345678</ns0:Id>
-            
-          
-          </ns0:Othr>
-          
-        
-        </ns0:Id>
-        
-      
-      </ns0:DbtrAcct>
-      
-      
-      <ns0:DbtrAgt>
-        
-        
-        <ns0:FinInstnId>
-          
-          
-          <ns0:BICFI>BANKCA01XXX</ns0:BICFI>
-          
-        
-        </ns0:FinInstnId>
-        
-      
-      </ns0:DbtrAgt>
-      
-      
-      <ns0:CdtrAgt>
-        
-        
-        <ns0:FinInstnId>
-          
-          
-          <ns0:BICFI>BANKCA02XXX</ns0:BICFI>
-          
-        
-        </ns0:FinInstnId>
-        
-      
-      </ns0:CdtrAgt>
-      
-      
-      <ns0:Cdtr>
-        
-        
-        <ns0:Nm>Jane Doe</ns0:Nm>
-        
-        
-        <ns0:PstlAdr>
-          
-          
-          <ns0:StrtNm>456 Oak Avenue</ns0:StrtNm>
-          
-          
-          <ns0:TwnNm>Vancouver</ns0:TwnNm>
-          
-          
-          <ns0:Ctry>CA</ns0:Ctry>
-          
-        
-        </ns0:PstlAdr>
-        
-        
-        <ns0:CtryOfRes>CA</ns0:CtryOfRes>
-        
-      
-      </ns0:Cdtr>
-      
-      
-      <ns0:CdtrAcct>
-        
-        
-        <ns0:Id>
-          
-          
-          <ns0:Othr>
-            
-            
-            <ns0:Id>87654321</ns0:Id>
-            
-          
-          </ns0:Othr>
-          
-        
-        </ns0:Id>
-        
-      
-      </ns0:CdtrAcct>
-      
-      
-      
-      
-      <ns0:InstrForCdtrAgt>
-        <ns0:Cd>PHOB</ns0:Cd>
-        <ns0:InstrInf>Please contact beneficiary by phone before credit</ns0:InstrInf>
-      </ns0:InstrForCdtrAgt>
-      
-      <ns0:Purp>
-        <ns0:Cd>CASH</ns0:Cd>
-      </ns0:Purp>
-      
-      <ns0:RgltryRptg>
-        <ns0:DbtCdtRptgInd>CRED</ns0:DbtCdtRptgInd>
-        <ns0:Authrty>
-          <ns0:Nm>Regulatory Authority</ns0:Nm>
-          <ns0:Ctry>CA</ns0:Ctry>
-        </ns0:Authrty>
-      </ns0:RgltryRptg><ns0:RmtInf>
-        
-        
-        <ns0:Ustrd>Invoice payment</ns0:Ustrd>
-        
-      
-      </ns0:RmtInf>
-      
-    
-    </ns0:CdtTrfTxInf>
-    
-  
-  </ns0:FIToFICstmrCdtTrf>
-  
-
-</ns0:Document>
+<?xml version='1.0' encoding='utf-8'?>
+  <!--
+    This XML file complies with the following ISO 20022 rules:
+    - Rule R2: Rule "Textual_RTR_InstructingAgent/InstructedAgent_DebtorAgent/CreditorAgent_Rule" - Instructing Agent must be the same as Debtor Agent, and Instructed Agent must be the same as Creditor Agent.
+    - Rule R3: Rule "RTR_Name_MandatoryIf_PstlAdrPresent_Rule" - If Postal Address is present, Name is mandatory.
+    - Rule R4: Rule "RTR_Name_MandatoryIf_PstlAdrPresent_Rule" - If Postal Address is present, Name is mandatory.
+    - Rule R5: Rule "RTR_DebtorName_MandatoryIf_Rule" - For Debtor, if AnyBIC is absent, Name is mandatory.
+    - Rule R6: Rule "RTR_Name_MandatoryIf_PstlAdrPresent_Rule" - If Postal Address is present, Name is mandatory.
+    - Rule R7: Rule "StructuredVsUnstructuredRule" - If PostalAddress is used and if AddressLine is present, then all other optional elements in PostalAddress must be absent.
+    - Rule R8: Rule "TownNameAndCountryRule" - If “PostalAddress” is used, and if AddressLine is absent, then Town Name and Country must be present.
+    - Rule R9: Rule "RTR_CreditorName_MandatoryIf_Rule" - For Creditor, if AnyBIC is absent, Name is mandatory.
+    - Rule R10: Rule "RTR_Name_MandatoryIf_PstlAdrPresent_Rule" - If Postal Address is present, Name is mandatory.
+    - Rule R11: Rule "StructuredVsUnstructuredRule" - If PostalAddress is used and if AddressLine is present, then all other optional elements in PostalAddress must be absent.
+    - Rule R12: Rule "TownNameAndCountryRule" - If “PostalAddress” is used, and if AddressLine is absent, then Town Name and Country must be present.
+    - Rule R13: Rule "RTR_Name_MandatoryIf_PstlAdrPresent_Rule" - If Postal Address is present, Name is mandatory.
+    - Rule R14: Rule "Textual_RTR_RelatedRemittanceRule" - The Related Remittance component must not exceed 9,000 characters of business data (excluding tags).   This rule will be effective on YYYY-MM-DD (date to be confirmed).
+    - Rule R15: Rule "Textual_RTR_RelatedRemitInfo_RemitInfo_MutuallyExclusiveRule" - Related Remittance Information and Remittance Information are mutually exclusive and all may be absent. This rule will be effective on YYYY-MM-DD (date to be confirmed).
+    - Rule R16: Rule "Textual_RTR_Unstructured_Structured_MutuallyExclusiveRule" - For Remittance Information, Unstructured and Structured are mutually exclusive and all may be absent.  This rule will be effective on YYYY-MM-DD (date to be confirmed).
+    - Rule R17: Rule "Textual_RTR_RemittanceRule" - Structured Remittance can be repeated, however the total business data for all occurrences (excluding tags) must not exceed 9,000 characters. This rule will be implemented on YYYY-MM-DD (date to be confirmed).
+    -->
+    <ns0:Document xmlns:ns0="urn:iso:std:iso:20022:tech:xsd:pacs.008.001.08">
+      <ns0:FIToFICstmrCdtTrf>
+        <ns0:GrpHdr>
+          <ns0:MsgId>MSG-DOMESTIC-PAYMENT-001</ns0:MsgId>
+          <ns0:CreDtTm>2025-04-03T12:00:00Z</ns0:CreDtTm>
+          <ns0:NbOfTxs>1</ns0:NbOfTxs>
+          <ns0:SttlmInf>
+            <ns0:SttlmMtd>CLRG</ns0:SttlmMtd>
+          </ns0:SttlmInf>
+          <ns0:InstgAgt>
+            <ns0:FinInstnId>
+              <ns0:BICFI>ABCDUS22XXX</ns0:BICFI>
+            </ns0:FinInstnId>
+          </ns0:InstgAgt>
+          <ns0:InstdAgt>
+            <ns0:FinInstnId>
+              <ns0:BICFI>EFGHCA33XXX</ns0:BICFI>
+            </ns0:FinInstnId>
+          </ns0:InstdAgt>
+        </ns0:GrpHdr>
+        <ns0:CdtTrfTxInf>
+          <ns0:PmtId>
+            <ns0:EndToEndId>E2E-DOM-001</ns0:EndToEndId>
+            <ns0:TxId>TX-DOM-001</ns0:TxId>
+          </ns0:PmtId>
+          <ns0:PmtTpInf>
+            <ns0:SvcLvl>
+              <ns0:Cd>NURG</ns0:Cd>
+            </ns0:SvcLvl>
+          </ns0:PmtTpInf>
+          <ns0:IntrBkSttlmAmt Ccy="CAD">1000.00</ns0:IntrBkSttlmAmt>
+          <ns0:ChrgBr>SHAR</ns0:ChrgBr>
+          <ns0:Dbtr>
+            <ns0:Nm>John Smith</ns0:Nm>
+            <ns0:PstlAdr>
+              <ns0:StrtNm>123 Maple Street</ns0:StrtNm>
+              <ns0:TwnNm>Toronto</ns0:TwnNm>
+              <ns0:Ctry>CA</ns0:Ctry>
+            </ns0:PstlAdr>
+            <ns0:CtryOfRes>CA</ns0:CtryOfRes>
+          </ns0:Dbtr>
+          <ns0:DbtrAcct>
+            <ns0:Id>
+              <ns0:Othr>
+                <ns0:Id>12345678</ns0:Id>
+              </ns0:Othr>
+            </ns0:Id>
+          </ns0:DbtrAcct>
+          <ns0:DbtrAgt>
+            <ns0:FinInstnId>
+              <ns0:BICFI>BANKCA01XXX</ns0:BICFI>
+            </ns0:FinInstnId>
+          </ns0:DbtrAgt>
+          <ns0:CdtrAgt>
+            <ns0:FinInstnId>
+              <ns0:BICFI>BANKCA02XXX</ns0:BICFI>
+            </ns0:FinInstnId>
+          </ns0:CdtrAgt>
+          <ns0:Cdtr>
+            <ns0:Nm>Jane Doe</ns0:Nm>
+            <ns0:PstlAdr>
+              <ns0:StrtNm>456 Oak Avenue</ns0:StrtNm>
+              <ns0:TwnNm>Vancouver</ns0:TwnNm>
+              <ns0:Ctry>CA</ns0:Ctry>
+            </ns0:PstlAdr>
+            <ns0:CtryOfRes>CA</ns0:CtryOfRes>
+          </ns0:Cdtr>
+          <ns0:CdtrAcct>
+            <ns0:Id>
+              <ns0:Othr>
+                <ns0:Id>87654321</ns0:Id>
+              </ns0:Othr>
+            </ns0:Id>
+          </ns0:CdtrAcct>
+          <ns0:InstrForCdtrAgt>
+            <ns0:Cd>PHOB</ns0:Cd>
+            <ns0:InstrInf>Please contact beneficiary by phone before credit</ns0:InstrInf>
+          </ns0:InstrForCdtrAgt>
+          <ns0:Purp>
+            <ns0:Cd>CASH</ns0:Cd>
+          </ns0:Purp>
+          <ns0:RgltryRptg>
+            <ns0:DbtCdtRptgInd>CRED</ns0:DbtCdtRptgInd>
+            <ns0:Authrty>
+              <ns0:Nm>Regulatory Authority</ns0:Nm>
+              <ns0:Ctry>CA</ns0:Ctry>
+            </ns0:Authrty>
+          </ns0:RgltryRptg>
+          <ns0:RmtInf>
+            <ns0:Ustrd>Invoice payment</ns0:Ustrd>
+          </ns0:RmtInf>
+        </ns0:CdtTrfTxInf>
+      </ns0:FIToFICstmrCdtTrf>
+    </ns0:Document>
